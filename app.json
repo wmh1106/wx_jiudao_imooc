@@ -1,0 +1,41 @@
+{
+    "pages": [
+"pages/poem/poem",
+        "pages/index/index",
+        "pages/bookList/bookList",
+        "pages/myLove/myLove"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#c7c7c7",
+        "selectedColor": "#333333",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "流行",
+                "iconPath": "./images/tabBar/classic.png",
+                "selectedIconPath": "./images/tabBar/classic_highlight.png"
+            },
+            {
+                "pagePath": "pages/bookList/bookList",
+                "text": "书单",
+                "iconPath": "./images/tabBar/book.png",
+                "selectedIconPath": "./images/tabBar/book_highlight.png"
+            },
+            {
+                "pagePath": "pages/myLove/myLove",
+                "text": "喜欢",
+                "iconPath": "./images/tabBar/my.png",
+                "selectedIconPath": "./images/tabBar/my_highlight.png"
+            }
+        ]
+    },
+    "debug": true
+}
