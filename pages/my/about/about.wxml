@@ -1,0 +1,24 @@
+<!-- 关于我 -->
+<view class='aboutMeWrap'>
+    <image class='bg' src='../../../images/bg/about_bg.png'></image>
+
+    <view class="us">
+        <view class='img'><image src="../../../images/banner/icon.jpg" ></image></view>
+        <text>Created By</text>
+        <text>七月</text>
+        <text>/</text>
+        <text>设计</text>
+        <text>木齐</text>
+    </view>
+
+    <view class='followWrap'>
+        <view class='name'>
+            <text> 关注微信公众号</text>
+            <text>林间有风</text>
+        </view>
+        <view class='hint'>
+            <text>欢迎开发者通过微信公众号向作者反馈BUG</text>
+            <text>由于本项目仅作为案例演示，不承诺保留用户相关数据</text>
+        </view>
+    </view>
+</view>

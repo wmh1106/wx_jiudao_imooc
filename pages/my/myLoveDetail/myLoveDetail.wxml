@@ -1,46 +1,37 @@
-<!-- 诗 -->
+<!-- 喜欢-电影 -->
 <view class="header">
     <view class='date'>
         <view>No.</view>
-        <view>04</view>
+        <view>17</view>
         <view>|</view>
         <view>
-            <text>十月</text>
+            <text>三月</text>
             <text>2018</text>
         </view>
     </view>
 
     <view class="interaction">
         <view class='love'>
-            <image src='../../images/icon/love.png'></image>
+            <image src='../../../images/icon/love.png'></image>
             <text>1172</text>
         </view>
         <view class='share'>
-            <image src='../../images/icon/share.png'></image>
+            <image src='../../../images/icon/share.png'></image>
         </view>
     </view>
 </view>
 
 <!-- banner -->
 <view class='banner'>
-    <image mode="aspectFill" src='../../images/banner/poem/poem1.jpg'></image>
+    <image mode="aspectFill" src='../../../images/banner/movie/movie1.png'></image>
 </view>
 
 <!-- 文字图片 -->
 <view class="textImage">
-    <image src="../../images/text/text_poem.png"></image>
+    <image src="../../../images/text/text_movie.png"></image>
 </view>
 
 <!-- 摘要 -->
 <view class="abstractOfArticle">
     <text>人生不能像做菜，把所有的料准备好了才下锅。</text>
-</view>
-
-<!-- 切换 -->
-<view class='switch'>
-    <view><image src='../../images/icon/prev.png'></image></view>
-    <view>
-    <text>李安《饮食男女》</text>
-    </view>
-    <view><image src='../../images/icon/next.png'></image></view>
 </view>

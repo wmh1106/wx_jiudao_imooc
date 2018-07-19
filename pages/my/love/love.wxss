@@ -1,0 +1,143 @@
+.myWrap {
+    position: relative;
+    width: 100%;
+    height: 560rpx;
+}
+
+.myWrap .myBg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.myWrap .myHead {
+    position: absolute;
+    left: 50%;
+    top: 252rpx;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    font-size: 34rpx;
+    text-align: center;
+}
+
+.myWrap .myHead image {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    margin-bottom: 20rpx;
+}
+
+.myWrap .menu {
+    position: absolute;
+    left: 0;
+    bottom: 34rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.myWrap .menu view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-size: 24rpx;
+    line-height: 36rpx;
+}
+
+.myWrap .menu view image {
+    width: 34rpx;
+    height: 34rpx;
+}
+
+.myWrap .menu view :nth-child(1) {
+    font-size: 34rpx;
+    color: #333;
+    margin-bottom: 5rpx;
+}
+
+/* 列表 */
+
+.loveListTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+    height: 88rpx;
+}
+
+.loveListTitle image {
+    width: 97rpx;
+    height: 42rpx;
+}
+
+.loveList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.loveList>view {
+    width: 330rpx;
+    background-color: #fff;
+    margin-bottom: 30rpx;
+}
+
+.loveList>view .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80rpx;
+    padding-left: 20rpx;
+    padding-right: 50rpx;
+}
+
+.loveList>view .top .type {
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    background: #f7f7f7;
+}
+
+.loveList>view .top .love {
+    position: relative;
+    font-size: 18rpx;
+    color: #ccc;
+}
+
+.loveList>view .top .love text {
+    position: absolute;
+    right: -30rpx;
+    top: -10rpx;
+}
+
+.loveList>view .top .love image {
+    width: 32rpx;
+    height: 28rpx;
+    vertical-align: top;
+}
+
+.loveList>view .cover {
+    width: 100%;
+    height: 240rpx;
+}
+
+.loveList>view .introduction {
+    padding:20rpx 20rpx 0;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color: #999;
+    height: 100rpx;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

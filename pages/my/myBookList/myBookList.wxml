@@ -1,0 +1,42 @@
+<view class='myBookList bgGray'>
+    <view>
+        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+        <view>
+            <text>爱你就像爱生命</text>
+            <text>李银河</text>
+        </view>
+        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
+    </view>
+     <view>
+        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+        <view>
+            <text>爱你就像爱生命</text>
+            <text>李银河</text>
+        </view>
+        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
+    </view>
+     <view>
+        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+        <view>
+            <text>爱你就像爱生命</text>
+            <text>李银河</text>
+        </view>
+        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
+    </view>
+     <view>
+        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+        <view>
+            <text>爱你就像爱生命</text>
+            <text>李银河</text>
+        </view>
+        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
+    </view>
+     <view>
+        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+        <view>
+            <text>爱你就像爱生命</text>
+            <text>李银河</text>
+        </view>
+        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
+    </view>
+</view>

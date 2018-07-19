@@ -1,0 +1,84 @@
+.aboutMeWrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutMeWrap .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutMeWrap .us {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    font-size: 24rpx;
+    font-weight: 100;
+    padding-top:100rpx;
+}
+
+.aboutMeWrap .us .img {
+    position: relative;
+    width: 181rpx;
+    height: 181rpx;
+    padding: 20rpx;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.aboutMeWrap .us .img image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.aboutMeWrap .us text{
+    writing-mode: vertical-lr;
+    padding-top:30rpx;
+}
+
+/* 底部-关注信息 */
+.followWrap{
+    position: fixed;
+    left: 0;
+    bottom:30rpx;
+    width: 100%;
+    height: auto;
+    padding-left: 30rpx;
+    padding-right:30rpx;
+    color: #fff;
+    font-size: 24rpx;
+}
+.followWrap .name{
+    display: flex;
+    flex-direction: column;
+    border-bottom:1px solid #fff;
+}
+.followWrap .name text:nth-child(1){
+    font-size: 20rpx;
+}
+.followWrap .name text:nth-child(2){
+    font-size: 34rpx;
+    line-height: 50rpx;
+}
+.followWrap .hint{
+    padding:20rpx 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 30rpx;
+}

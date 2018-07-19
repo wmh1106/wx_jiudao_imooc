@@ -1,0 +1,50 @@
+<!-- 播放音乐 -->
+<view class="header">
+    <view class='date'>
+        <view>No.</view>
+        <view>17</view>
+        <view>|</view>
+        <view>
+            <text>三月</text>
+            <text>2018</text>
+        </view>
+    </view>
+
+    <view class="interaction">
+        <view class='love'>
+            <image src='../../../images/icon/love.png'></image>
+            <text>1172</text>
+        </view>
+        <view class='share'>
+            <image src='../../../images/icon/share.png'></image>
+        </view>
+    </view>
+</view>
+
+<!-- banner -->
+<view class='music'>
+    <view class='musicWrap'>
+        <image class='cover' mode="aspectFill" src='../../../images/banner/music/1.png'></image>
+        <image class='control' mode="center" src='../../../images/control/play.png'></image>
+    </view>
+</view>
+
+<!-- 文字图片 -->
+<view class="textImage">
+    <image src="../../../images/text/text_music.png"></image>
+</view>
+
+<!-- 歌词 -->
+<view class="musicLyric">
+    <text>许多人来来去去</text>
+    <text>相聚又别离</text>
+</view>
+
+<!-- 切换 -->
+<view class='switch'>
+    <view><image src='../../../images/icon/prev.png'></image></view>
+    <view>
+    <text>好妹妹《一个人的北京》</text>
+    </view>
+    <view><image src='../../../images/icon/next.png'></image></view>
+</view>

@@ -1,9 +1,16 @@
 {
     "pages": [
-"pages/poem/poem",
-        "pages/index/index",
-        "pages/bookList/bookList",
-        "pages/myLove/myLove"
+"pages/book/bookSearch/bookSearch",
+
+        "pages/my/myLoveDetail/myLoveDetail",
+        "pages/my/myBookList/myBookList",
+        "pages/my/love/love",
+        "pages/my/about/about",
+        "pages/book/bookDetails/bookDetails",
+        "pages/book/bookList/bookList",
+        "pages/index/movie/movie",
+        "pages/index/playMusic/playMusic",
+        "pages/index/poem/poem"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -18,19 +25,19 @@
         "borderStyle": "black",
         "list": [
             {
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/index/movie/movie",
                 "text": "流行",
                 "iconPath": "./images/tabBar/classic.png",
                 "selectedIconPath": "./images/tabBar/classic_highlight.png"
             },
             {
-                "pagePath": "pages/bookList/bookList",
+                "pagePath": "pages/book/bookList/bookList",
                 "text": "书单",
                 "iconPath": "./images/tabBar/book.png",
                 "selectedIconPath": "./images/tabBar/book_highlight.png"
             },
             {
-                "pagePath": "pages/myLove/myLove",
+                "pagePath": "pages/my/love/love",
                 "text": "喜欢",
                 "iconPath": "./images/tabBar/my.png",
                 "selectedIconPath": "./images/tabBar/my_highlight.png"

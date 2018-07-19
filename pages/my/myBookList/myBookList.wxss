@@ -1,0 +1,39 @@
+.myBookList{
+    padding: 0 30rpx;
+    border-bottom:1px solid transparent;
+}
+.myBookList> view{
+    display: flex;
+    align-items: center;
+    height: 140rpx;
+    margin: 20rpx 0;
+    padding:20rpx;
+    background: #fff;
+    border-radius: 10rpx;
+}
+.myBookList> view .bookImg{
+    width: 80rpx;
+    height: 100rpx;
+    flex-shrink: 1;
+    margin-right: 20rpx;
+}
+
+.myBookList> view .loveIcon{
+    width: 32rpx;
+    height: 28rpx;
+    flex-shrink: 1;
+}
+.myBookList> view>view{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.myBookList> view > view text:nth-child(1){
+    font-size: 28rpx;
+    color: #333;
+}
+.myBookList> view > view text:nth-child(2){
+    font-size: 20rpx;
+    color: #999;
+}

@@ -1,4 +1,4 @@
-// pages/my/myLove.js
+// pages/my/myBookList/myBookList.js
 Page({
 
   /**

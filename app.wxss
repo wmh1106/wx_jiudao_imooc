@@ -5,3 +5,12 @@ page{
 view,text{
     box-sizing: border-box;
 }
+image{
+    vertical-align: top;
+}
+
+.bgGray{
+    background-color: #f5f5f5;
+    /* 防止 margin 的 bug */
+    border-top:1px solid transparent;
+}

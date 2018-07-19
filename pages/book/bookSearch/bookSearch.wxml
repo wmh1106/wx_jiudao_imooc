@@ -1,0 +1,29 @@
+<view class='searchWrap'>
+    <view class='searchInput'>
+        <image src='../../../images/icon/search.png'></image>
+        <input placeholder="搜索图书名称" confirm-type="search"  auto-focus adjust-position="false"/>
+    </view>
+    <view class='searchCancelButton'>取消</view>
+</view>
+
+<!-- 历史搜 -->
+<view class='searchListWrap'>
+    <view>历史搜索</view>
+    <view>
+        <text>假如真有时光机</text>
+        <text>听说</text>
+        <text>雷雨</text>
+        <text>大家都有病</text>
+    </view>
+</view>
+
+<!-- 热门搜索 -->
+<view class='searchListWrap'>
+    <view>热门搜索</view>
+    <view>
+        <text>人间失格</text>
+        <text>听说</text>
+        <text>月亮和六便士</text>
+        <text>大家都有病</text>
+    </view>
+</view>
