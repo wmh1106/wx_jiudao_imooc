@@ -1,13 +1,14 @@
-.searchWrap{
+.searchWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 30rpx;
-    border-top:1px solid #eee;
+    padding: 0 30rpx;
+    border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     height: 100rpx;
 }
-.searchWrap .searchInput{
+
+.searchWrap .searchInput {
     height: 66rpx;
     background: #f7f7f7;
     flex: 1;
@@ -16,21 +17,30 @@
     padding: 0 30rpx;
     border-radius: 33rpx;
 }
-.searchWrap .searchInput input{
+
+.searchWrap .searchInput input {
     font-size: 28rpx;
-       flex: 1;
+    flex: 1;
 }
-.searchWrap .searchInput input.input-placeholder{
+
+.searchWrap .searchInput input.input-placeholder {
     color: #999;
     font-size: 28rpx;
 }
-.searchWrap .searchInput image{
+
+.searchWrap .searchInput .serchIcon {
     width: 28rpx;
     height: 28rpx;
     margin-right: 10rpx;
 }
-.searchWrap .searchCancelButton{
-    margin-left:30rpx;
+
+.searchWrap .searchInput .clearIcon {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.searchWrap .searchCancelButton {
+    margin-left: 30rpx;
     height: 66rpx;
     line-height: 66rpx;
     border: 1px solid #666;
@@ -41,9 +51,80 @@
 }
 
 /* 历史搜索 */
-.searchListWrap{
-    
+
+.searchListWrap {
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    margin-bottom: 100rpx;
 }
-.searchListWrap>view:nth-of-type(1){}
-.searchListWrap>view:nth-of-type(2){}
-.searchListWrap>view:nth-of-type(2) text{}
+
+.searchListWrap>view:nth-of-type(1) {
+    border-left: 8rpx solid #333;
+    font-size: 28rpx;
+    color: #333;
+    padding-left: 20rpx;
+    line-height: 28rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.searchListWrap>view:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.searchListWrap>view:nth-of-type(2) text {
+    font-size: 28rpx;
+    color: #666;
+    line-height: 40rpx;
+    padding: 5rpx 20rpx;
+    margin: 10rpx;
+    background: #f7f7f7;
+}
+
+/* 搜索结果 */
+
+.searchResultWrap {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100rpx;
+    bottom: 0;
+    background: #fff;
+    overflow-y: scroll;
+}
+
+.searchResult {
+    display: flex;
+    align-items: center;
+    margin: 0 30rpx;
+    padding: 20rpx 0;
+    border-bottom: 1px solid #eee;
+}
+
+.searchResult> image {
+    width: 60rpx;
+    height: 80rpx;
+    flex-shrink: 1;
+    margin-right: 20rpx;
+}
+
+.searchResult> .news {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.searchResult> .news text:nth-child(1) {
+    font-size: 28rpx;
+    color: #333;
+}
+
+.searchResult> .news text:nth-child(2) {
+    font-size: 20rpx;
+    color: #999;
+}

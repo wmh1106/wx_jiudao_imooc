@@ -1,7 +1,8 @@
 <view class='searchWrap'>
     <view class='searchInput'>
-        <image src='../../../images/icon/search.png'></image>
-        <input placeholder="搜索图书名称" confirm-type="search"  auto-focus adjust-position="false"/>
+        <image class='serchIcon' src='../../../images/icon/search.png'></image>
+        <input placeholder="搜索图书名称" confirm-type="search" auto-focus adjust-position="false" />
+        <image class='clearIcon' src='../../../images/icon/close.png'></image>
     </view>
     <view class='searchCancelButton'>取消</view>
 </view>
@@ -25,5 +26,149 @@
         <text>听说</text>
         <text>月亮和六便士</text>
         <text>大家都有病</text>
+    </view>
+</view>
+
+<!-- 搜索结果 -->
+<view class='searchResultWrap'>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
+    </view>
+    <view class='searchResult'>
+        <image src='../../../images/banner/book/2.png'></image>
+        <view class='news'>
+            <text> 学习指导</text>
+            <text>王某某</text>
+        </view>
     </view>
 </view>
