@@ -1,5 +1,7 @@
 {
     "pages": [
+        "pages/index/playMusic/playMusic",
+        
 "pages/book/bookSearch/bookSearch",
 
         "pages/my/myLoveDetail/myLoveDetail",
@@ -9,7 +11,7 @@
         "pages/book/bookDetails/bookDetails",
         "pages/book/bookList/bookList",
         "pages/index/movie/movie",
-        "pages/index/playMusic/playMusic",
+        
         "pages/index/poem/poem"
     ],
     "window": {
