@@ -1,0 +1,18 @@
+.love {
+    position: relative;
+}
+
+.love image {
+    margin: 0 33rpx;
+    width: 32rpx;
+    height: 28rpx;
+}
+
+.love text {
+    position: absolute;
+    right: 0rpx;
+    top: 0;
+    font-size: 18rpx;
+    transform: translateY(-20%);
+    color: #999999;
+}

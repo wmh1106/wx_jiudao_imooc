@@ -1,8 +1,7 @@
 {
     "pages": [
-        "pages/index/playMusic/playMusic",
-        
-"pages/book/bookSearch/bookSearch",
+"pages/index/index",
+
 
         "pages/my/myLoveDetail/myLoveDetail",
         "pages/my/myBookList/myBookList",
@@ -10,9 +9,7 @@
         "pages/my/about/about",
         "pages/book/bookDetails/bookDetails",
         "pages/book/bookList/bookList",
-        "pages/index/movie/movie",
-        
-        "pages/index/poem/poem"
+        "pages/book/bookSearch/bookSearch"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -27,7 +24,7 @@
         "borderStyle": "black",
         "list": [
             {
-                "pagePath": "pages/index/movie/movie",
+                "pagePath": "pages/index/index",
                 "text": "流行",
                 "iconPath": "./images/tabBar/classic.png",
                 "selectedIconPath": "./images/tabBar/classic_highlight.png"

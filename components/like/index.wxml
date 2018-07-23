@@ -1,0 +1,6 @@
+<!--components/like/index.wxml-->
+<view class='love' bindtap='handleIsLove'>
+    <image wx:if="{{isActive}}" src='../images/icon/love_active.png'></image>
+    <image wx:else src='../images/icon/love.png'></image>
+    <text>{{count}}</text>
+</view>

@@ -1,0 +1,52 @@
+<view class="header">
+    <view class='date'>
+        <view>No.</view>
+        <view>{{index}}</view>
+        <view>|</view>
+        <view>
+            <text>{{month}}</text>
+            <text>{{2018}}</text>
+        </view>
+    </view>
+
+    <view class="interaction">
+        <like-cmp id="{{id}}" count="{{like_status}}"></like-cmp>
+        <view class='share'>
+            <image src='/images/icon/share.png'></image>
+        </view>
+    </view>
+</view>
+
+<!-- banner -->
+<view class='banner'>
+    <view wx:if="{{ type === 200 }}" class='musicWrap'>
+        <image class='cover' mode="aspectFill" src='{{image}}'></image>
+        <image class='control' mode="center" src='/images/control/play.png'></image>
+    </view>
+    <image wx:else class='movieCover' mode="aspectFill" src='{{image}}'></image>
+</view>
+
+<!-- 文字图片 -->
+<view class="textImage">
+    <image wx:if="{{ type === 100 }}" src="/images/text/text_movie.png"></image>
+    <image wx:elif="{{ type === 200 }}" src="/images/text/text_music.png"></image>
+    <image wx:elif="{{ type === 300 }}" src="/images/text/text_poem.png"></image>
+</view>
+
+<!-- 摘要 -->
+<view class="abstractOfArticle">
+    <text>{{content}}</text>
+</view>
+
+<!-- 切换 -->
+<view class='switch'>
+    <view bindtap='nextPeriod'>
+        <image src='/images/icon/prev.png'></image>
+    </view>
+    <view>
+        <text>{{title}}</text>
+    </view>
+    <view bindtap="priorPeriod">
+        <image src='/images/icon/next.png'></image>
+    </view>
+</view>

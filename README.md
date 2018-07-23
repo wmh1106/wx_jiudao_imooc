@@ -48,4 +48,9 @@
   - remove
   - clear
 - 同步、异步根据业务场景来确定。
-- 在`app.js`定义全局变量，全局状态用
+- 在`app.js`定义全局数据，全局状态用
+  - `App({globalData:{}})`
+- 真机清除缓存：只能临时做个按钮，调用`clear`API
+- template 内路径：使用绝对路径
+- 冒泡
+  - target,currentTarget

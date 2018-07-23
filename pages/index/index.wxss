@@ -2,7 +2,6 @@
     display: flex;
     height: 100rpx;
     justify-content: space-between;
-    border-bottom:1px solid #eeeeee;
 }
 
 .header .date {
@@ -46,24 +45,7 @@
     justify-content: flex-end;
 }
 
-.header .interaction .love {
-    position: relative;
-}
 
-.header .interaction .love image {
-    margin: 0 33rpx;
-    width: 32rpx;
-    height: 28rpx;
-}
-
-.header .interaction .love text {
-    position: absolute;
-    right: 0rpx;
-    top: 0;
-    font-size: 18rpx;
-    transform: translateY(-20%);
-    color: #bbb;
-}
 
 .header .interaction .share image {
     margin: 0 33rpx;
@@ -72,14 +54,19 @@
 }
 
 
-/* banner */
-.music{
+/* banner-movie */
+.banner{
     display: flex;
     align-items: center;
     width: 750rpx;
     height: 500rpx;
 }
-.musicWrap{
+.banner .movieCover{
+    width: 750rpx;
+    height: 500rpx;
+}
+
+.banner .musicWrap{
     position: relative;
     margin-left:auto;
     margin-right:auto;
@@ -88,18 +75,18 @@
     border-radius: 50%;
     overflow: hidden;
 }
-.musicWrap image{
+.banner .musicWrap image{
     position: absolute;
     
 }
-.musicWrap .cover{
+.banner .musicWrap .cover{
     left:0;
     top:0;
      width: 451rpx;
     height: 451rpx;  
     border-radius: 50%;  
 }
-.musicWrap .control{
+.banner .musicWrap .control{
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
@@ -107,6 +94,8 @@
     height: 120rpx;
     border-radius: 50%;  
 }
+
+
 
 /* 图片文字 */
 .textImage{
@@ -122,14 +111,11 @@
 
 
 /* 文字摘要 */
-.musicLyric{
+.abstractOfArticle{
     padding-top:110rpx;
     font-size: 34rpx;
     padding-right:94rpx;
     padding-left:94rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 
