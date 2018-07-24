@@ -1,4 +1,27 @@
+/* 搜索 */
+.search {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: #999;
+    background: #f9f9f9;
+    border-radius: 50rpx;
+}
+
+.search image {
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 10rpx;
+}
+
 .searchWrap {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,6 +36,7 @@
     background: #f7f7f7;
     flex: 1;
     display: flex;
+    justify-items: center;
     align-items: center;
     padding: 0 30rpx;
     border-radius: 33rpx;
@@ -35,11 +59,16 @@
 }
 
 .searchWrap .searchInput .clearIcon {
+    display: none;
     width: 28rpx;
     height: 28rpx;
 }
+.searchWrap.focus .searchInput .clearIcon{
+    display: block;
+}
 
 .searchWrap .searchCancelButton {
+    display: none;
     margin-left: 30rpx;
     height: 66rpx;
     line-height: 66rpx;
@@ -49,9 +78,90 @@
     padding: 0 30rpx;
     border-radius: 33rpx;
 }
+.searchWrap.focus .searchCancelButton{
+    display: block;
+}
 
-/* 历史搜索 */
+/* 书单列表 */
 
+.bookListWrap {
+
+    background: #f8f8f8;
+    padding-top: 135rpx;
+}
+
+.bookListWrap .bookListTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookListWrap .bookListTitle image {
+    width: 107rpx;
+    height: 34rpx;
+}
+
+.bookListWrap .bookList {
+    padding-top: 22rpx;
+    padding-right: 90rpx;
+    padding-left: 90rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bookListWrap .bookList>view {
+    width: 240rpx;
+    border-radius: 10rpx;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom:58rpx;
+}
+
+.bookListWrap .bookList>view image {
+    width: 240rpx;
+    height: 220rpx;
+}
+
+.bookListWrap .bookList>view .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10rpx 20rpx;
+    min-height: 138rpx;
+}
+
+.bookListWrap .bookList>view .content>text:nth-of-type(1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24rpx;
+    color: #333;
+}
+
+.bookListWrap .bookList>view .content>text:nth-of-type(2) {
+    font-size: 20rpx;
+    color: #999;
+}
+
+.bookListWrap .bookList>view .content>view:nth-of-type(1) {
+    padding-top:20rpx;
+    align-self: flex-end;
+    font-size: 18rpx;
+    color: #bbb;
+}
+
+/* 搜索记录 */
+.searchBox{
+    display: none;
+    position:absolute;
+    left: 0;
+    top:100rpx;
+    right:0;
+    background: #fff;
+}
+.searchBox.focus{
+    display: block;
+}
 .searchListWrap {
     padding-left: 30rpx;
     padding-right: 30rpx;

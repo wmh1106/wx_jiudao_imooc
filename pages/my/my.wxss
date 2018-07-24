@@ -86,6 +86,7 @@
     width: 330rpx;
     background-color: #fff;
     margin-bottom: 30rpx;
+    padding-bottom:20rpx;
 }
 
 .loveList>view .top {

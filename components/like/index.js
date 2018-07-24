@@ -1,23 +1,34 @@
-// components/like/index.js
+/**
+ * 数据的来源：
+ * 1. 直接写在 WXML
+ * 2. JS => WXML
+ * 3. SERVER => JS => WXML
+ * 
+ * 
+ * 封装性、开放性
+ * 封装在内部、开放出来
+ * 组件的粒度
+ * 组件可以是简单的功能、也可以是复杂的功能
+ * */ 
+
 Component({
-    /**
-     * 组件的属性列表
-     */
     properties: {
         "count": {
             type: Number,
             value: 0
+        },
+        like: {
+            type: Boolean,
+            value: false
         }
     },
-    /**
-     * 组件的初始数据
-     */
     data: {
-        isActive: false
+        // 图片资源
+        imgUrl:{
+            "likeImg":"../images/icon/love_active.png",
+            "unLikeImg":"../images/icon/love.png"
+        }
     },
-    /**
-     * 组件的方法列表
-     */
     methods: {
         handleIsLove: function(event) {
             let {

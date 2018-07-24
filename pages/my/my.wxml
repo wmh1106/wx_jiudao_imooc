@@ -1,0 +1,39 @@
+<view class="myWrap">
+    <image class='myBg' src='/images/bg/love_bg.png'></image>
+    <view class='myHead'>
+        <image src='/images/banner/icon.jpg'></image>
+        <text>辉</text>
+    </view>
+    <view class='menu'>
+        <view bindtap="goToAbout">
+            <image src='/images/icon/hint.png'></image>
+            <text>关于我们</text>
+        </view>
+        <view bindtap="goToMyBookList">
+            <text>17</text>
+            <text>我的书单</text>
+        </view>
+    </view>
+</view>
+
+<view class='bgGray'>
+
+    <view class='loveListTitle'>
+        <image src='/images/text/text_love.png'></image>
+    </view>
+
+    <view wx:if="{{myLoveBookList.length > 0}}" class='loveList'>
+        <block wx:for="{{myLoveBookList}}" wx:key="{{item.id}}"></block>
+        <view>
+            <view class='top'>
+                <text class='type'>{{type===100?"电影":"音乐" }}</text>
+                <view class='love'>
+                    <image src='/images/icon/love_active.png'></image>
+                    <text>1172</text>
+                </view>
+            </view>
+            <image class='cover' src='{{item.image}}'></image>
+            <view class="introduction">{{item.content}}</view>
+        </view>
+    </view>
+</view>

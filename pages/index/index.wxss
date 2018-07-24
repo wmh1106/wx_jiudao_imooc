@@ -46,7 +46,10 @@
 }
 
 
-
+.header .interaction .share{
+    display: flex;
+    align-items: center;
+}
 .header .interaction .share image {
     margin: 0 33rpx;
     width: 28rpx;

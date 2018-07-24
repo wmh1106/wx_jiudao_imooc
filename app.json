@@ -1,15 +1,15 @@
 {
     "pages": [
-"pages/index/index",
-
-
-        "pages/my/myLoveDetail/myLoveDetail",
-        "pages/my/myBookList/myBookList",
-        "pages/my/love/love",
-        "pages/my/about/about",
+        "pages/index/index",
+        "pages/book/book",
         "pages/book/bookDetails/bookDetails",
-        "pages/book/bookList/bookList",
-        "pages/book/bookSearch/bookSearch"
+        
+        "pages/my/about/about",
+        "pages/my/my",
+        "pages/my/myLoveDetail/myLoveDetail",
+        "pages/my/myBookList/myBookList"
+        
+        
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -30,13 +30,13 @@
                 "selectedIconPath": "./images/tabBar/classic_highlight.png"
             },
             {
-                "pagePath": "pages/book/bookList/bookList",
+                "pagePath": "pages/book/book",
                 "text": "书单",
                 "iconPath": "./images/tabBar/book.png",
                 "selectedIconPath": "./images/tabBar/book_highlight.png"
             },
             {
-                "pagePath": "pages/my/love/love",
+                "pagePath": "pages/my/my",
                 "text": "喜欢",
                 "iconPath": "./images/tabBar/my.png",
                 "selectedIconPath": "./images/tabBar/my_highlight.png"

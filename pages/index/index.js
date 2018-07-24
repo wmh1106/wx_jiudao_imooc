@@ -2,13 +2,11 @@ import { HTTP} from '../../utils/http.js'
 
 const http = new HTTP()
 
-
-
 Page({
     data: {
         index:0
     },
-    onReady: function() {
+    onReady() {
         http.request({
             url: '/classic/latest',
             success: (data) => {
@@ -17,6 +15,7 @@ Page({
                 this.setData({
                     ...data,
                     year,
+                    "index": this.zeroPadding(data.index),
                     "month": this.conversionMonth(parseInt(month))
                 })
             },
@@ -28,46 +27,19 @@ Page({
             }
         })
     },
+    zeroPadding(number){
+        return number<9?"0"+number:""+number;
+    },
     conversionMonth(number) {
         const month = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
         if (typeof number !== 'number' && number > 12 && number < 0) return '参数错误';
         return month[number]
     },
-    priorPeriod: function(){
+    priorPeriod(){
         const idx = this.data.index
         http.request({
             url: `/classic/${idx}/previous`,
             success: (data) => {
-                /*
-                "谁念过 千字文章 秋收冬已藏"
-fav_nums
-:
-10
-id
-:
-1
-image
-:
-"http://bl.7yue.pro/images/music.7.png"
-index
-:
-7
-like_status
-:
-0
-pubdate
-:
-"2018-06-22"
-title
-:
-"不才 《参商》"
-type
-:
-200
-url
-:
-"http://music.163.com/song/media/outer/url?id=29719651.mp3"
-                */ 
                 const [year, month, day] = data.pubdate.split('-')
                 this.setData({
                     ...data,
@@ -88,7 +60,7 @@ url
             }
         })
     },
-    nextPeriod: function(){
+    nextPeriod(){
         const idx = this.data.index
         http.request({
             url: `/classic/${idx}/next`,
@@ -112,5 +84,17 @@ url
                 console.error(error)
             }
         })
+    },
+    controlMusic(){
+        
+    },
+    onShareAppMessage(res) {
+        if (res.from === 'menu') {
+            console.log(res.target)
+        }
+        return {
+            title: this.data.title,
+            path: '/page/index/index'
+        }
     }
 })

@@ -1,18 +1,19 @@
 .love {
-    position: relative;
+    /* 定宽 || 自适应 => 这里决定自适应 */
+    display: inline-flex;
 }
 
 .love image {
-    margin: 0 33rpx;
     width: 32rpx;
     height: 28rpx;
 }
 
 .love text {
-    position: absolute;
-    right: 0rpx;
-    top: 0;
-    font-size: 18rpx;
-    transform: translateY(-20%);
+    position: relative;
+    left: 6rpx;
+    bottom: 0;
+    /* 通过消除间距，达到正常的偏移量 */
+    line-height: 0;
+    font-size: 24rpx;
     color: #999999;
 }

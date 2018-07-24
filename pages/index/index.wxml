@@ -21,7 +21,7 @@
 <view class='banner'>
     <view wx:if="{{ type === 200 }}" class='musicWrap'>
         <image class='cover' mode="aspectFill" src='{{image}}'></image>
-        <image class='control' mode="center" src='/images/control/play.png'></image>
+        <image bindtap="controlMusic" class='control' mode="center" src='/images/control/play.png'></image>
     </view>
     <image wx:else class='movieCover' mode="aspectFill" src='{{image}}'></image>
 </view>

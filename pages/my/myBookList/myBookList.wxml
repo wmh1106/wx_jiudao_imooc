@@ -1,42 +1,14 @@
 <view class='myBookList bgGray'>
-    <view>
-        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
+
+    <block wx:for="{{myLoveBookList}}" wx:key="{{item.id}}">
         <view>
-            <text>爱你就像爱生命</text>
-            <text>李银河</text>
+            <image class="bookImg" src='{{item.image}}'></image>
+            <view>
+                <text>{{item.title}}</text>
+                <text>李银河</text>
+            </view>
+            <image class='loveIcon' src='/images/icon/love_active.png'></image>
         </view>
-        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
-    </view>
-     <view>
-        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
-        <view>
-            <text>爱你就像爱生命</text>
-            <text>李银河</text>
-        </view>
-        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
-    </view>
-     <view>
-        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
-        <view>
-            <text>爱你就像爱生命</text>
-            <text>李银河</text>
-        </view>
-        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
-    </view>
-     <view>
-        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
-        <view>
-            <text>爱你就像爱生命</text>
-            <text>李银河</text>
-        </view>
-        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
-    </view>
-     <view>
-        <image class="bookImg" src='../../../images/banner/book/1.png'></image>
-        <view>
-            <text>爱你就像爱生命</text>
-            <text>李银河</text>
-        </view>
-        <image class='loveIcon' src='../../../images/icon/love_active.png'></image>
-    </view>
+    </block>
+
 </view>

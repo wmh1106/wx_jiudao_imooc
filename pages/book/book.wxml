@@ -1,12 +1,41 @@
-<view class='searchWrap'>
+<!-- 搜索 -->
+<view class='searchWrap {{focus?"focus":"" }}'>
     <view class='searchInput'>
-        <image class='serchIcon' src='../../../images/icon/search.png'></image>
-        <input placeholder="搜索图书名称" confirm-type="search" auto-focus adjust-position="false" />
-        <image class='clearIcon' src='../../../images/icon/close.png'></image>
+        <image class='serchIcon' src='/images/icon/search.png'></image>
+        <input type='text' placeholder="搜索图书名称" confirm-type="search"  adjust-position="false" bindfocus="handleFocus" bindblur="handleBlur" bindconfirm="handleBlur"/>
+        <image class='clearIcon' src='/images/icon/close.png'></image>
     </view>
     <view class='searchCancelButton'>取消</view>
 </view>
 
+
+
+<!-- 图书列表 -->
+<view class='bookListWrap'>
+    <view class='bookListTitle'>
+        <image src='/images/text/text_change.png'></image>
+    </view>
+    <view class='bookList'>
+
+        <block wx:for="{{bookList}}" wx:key="id">
+            <view>
+                <image src='{{item.image}}'></image>
+                <view class='content'>
+                    <text>{{item.title}}</text>
+                    <text>{{item.author}}</text>
+                    <view>
+                        <text>{{item.like_status}} 喜欢</text>
+                        <text>·</text>
+                        <text>{{item.fav_nums}} 短评</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+
+    </view>
+</view>
+
+<view class='searchBox {{focus?"focus":""}}'>
 <!-- 历史搜 -->
 <view class='searchListWrap'>
     <view>历史搜索</view>
@@ -27,6 +56,7 @@
         <text>月亮和六便士</text>
         <text>大家都有病</text>
     </view>
+</view>
 </view>
 
 <!-- 搜索结果 -->

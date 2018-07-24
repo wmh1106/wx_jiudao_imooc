@@ -2,6 +2,7 @@ page{
     font-size: 34rpx;
     font-weight: 200;
     color: #333;
+    font-family: "PingFangSC-Thin"
 }
 view,text,image{
     box-sizing: border-box;
